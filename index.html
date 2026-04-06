@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Switch to Visible and save big with a no-contract mobile plan. Get unlimited data and Verizon's nationwide network for just $25 per month. Start saving now!">
+    <meta name="description" content="Switch to Visible and save big with a no-contract mobile plan. Get unlimited data and Verizon's nationwide network for just $20 per month. Start saving now!">
     <meta name="keywords" content="Visible mobile plan, unlimited data, no contract, affordable mobile plan, Verizon network, save with Visible, mobile savings">
     <meta property="og:title" content="Switch to Visible | Unlimited Data, No Contract">
-    <meta property="og:description" content="Save big with Visible. Get unlimited data, talk, and text with no contract, all for just $25 per month. Powered by Verizon.">
+    <meta property="og:description" content="Save big with Visible. Get unlimited data, talk, and text with no contract, all for just $20 per month. Powered by Verizon.">
     <meta property="og:image" content="path_to_image.jpg"> <!-- Add an image link here -->
     <meta name="robots" content="index, follow">
-    
+
     <!-- Structured Data for FAQ -->
     <script type="application/ld+json">
         {
@@ -43,14 +43,14 @@
             "@context": "http://schema.org",
             "@type": "Product",
             "name": "Visible Mobile Plan",
-            "description": "Unlimited data, talk, and text for $25/month. Powered by Verizon's network.",
+            "description": "Unlimited data, talk, and text for $20/month. Powered by Verizon's network.",
             "url": "https://www.visible.com",
             "image": "https://www.visible.com/image.jpg",
             "brand": "Visible",
             "offers": {
                 "@type": "Offer",
                 "priceCurrency": "USD",
-                "price": "25.00",
+                "price": "20.00",
                 "priceValidUntil": "2026-12-31"
             }
         }
@@ -67,7 +67,177 @@
         gtag('config', 'UA-XXXXXX-X');  // Replace with your actual tracking ID
     </script>
 
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #3f51b5;
+            padding: 15px;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e0245e;
+        }
+
+        /* Headline Section (Clickable) */
+        .headline {
+            background-color: #4caf50;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .headline a {
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .headline a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .benefits li {
+            margin-bottom: 15px;
+        }
+
+        .comparison table {
+            width: 100%;
+            margin: 30px 0;
+            border-collapse: collapse;
+        }
+
+        .comparison th, .comparison td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .comparison th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .faq-item {
+            margin: 15px 0;
+        }
+
+        .faq-item h3 {
+            color: #333;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 12px 24px;
+            }
+
+            .headline a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -85,14 +255,19 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="background-image: url('hero-image.jpg');">
+    <section id="home" class="hero">
         <div class="hero-content">
             <h1>Switch to Visible & Save Big on Your Mobile Plan</h1>
             <p>Get unlimited data, no contracts, and save up to $500/year. Join thousands of satisfied customers today!</p>
             <a href="https://convert.ctypy.com/aff_c?offer_id=29563&aff_id=21885" class="cta-button">
-                <i class="fas fa-mobile-alt"></i> Start Saving with Visible
+                Start Saving with Visible
             </a>
         </div>
+    </section>
+
+    <!-- Clickable Headline Section -->
+    <section class="headline">
+        <a href="https://convert.ctypy.com/aff_c?offer_id=29563&aff_id=21885">Join now & go unlimited for $20/mo for 12 mo.</a>
     </section>
 
     <!-- Benefits Section -->
@@ -102,30 +277,12 @@
             <li><strong>No Contracts</strong> - Enjoy the flexibility of a contract-free mobile plan.</li>
             <li><strong>Unlimited Data</strong> - Stream, browse, and talk as much as you want.</li>
             <li><strong>Powered by Verizon</strong> - Stay connected with the same network as Verizon's nationwide coverage.</li>
-            <li><strong>Affordable Rates</strong> - Get all of this for only $25/month for your first month.</li>
+            <li><strong>Affordable Rates</strong> - Get all of this for only $20/month for your first 12 months.</li>
         </ul>
         <a href="https://convert.ctypy.com/aff_c?offer_id=29563&aff_id=21885" class="cta-button">
             Learn More About Visible
         </a>
     </section>
-
-    <!-- Savings Calculator -->
-    <section id="savings-calculator">
-        <h2>How Much Can You Save with Visible?</h2>
-        <p>Enter your current monthly mobile bill and see your savings:</p>
-        <input type="number" id="current-bill" placeholder="Your current monthly bill">
-        <button onclick="calculateSavings()">Calculate Savings</button>
-        <p id="savings-output"></p>
-    </section>
-
-    <script>
-        function calculateSavings() {
-            var currentBill = parseFloat(document.getElementById('current-bill').value);
-            var visiblePrice = 25; // Visible's monthly price for the first month.
-            var savings = currentBill - visiblePrice;
-            document.getElementById('savings-output').innerHTML = 'You could save $' + savings + ' per month with Visible!';
-        }
-    </script>
 
     <!-- Comparison Section -->
     <section id="comparison" class="comparison">
@@ -142,7 +299,7 @@
             <tbody>
                 <tr>
                     <td>Monthly Cost</td>
-                    <td>$25</td>
+                    <td>$20</td>
                     <td>$70+</td>
                     <td>$60+</td>
                 </tr>
@@ -182,39 +339,9 @@
             <h3>Can I keep my phone number?</h3>
             <p>Yes! You can easily bring your existing phone number when you switch to Visible.</p>
         </div>
-        <div class="faq-item">
-            <h3>Is Visible available in my area?</h3>
-            <p>Visible operates on Verizon's network, which has coverage across the U.S. Check coverage in your area on Visible’s website.</p>
-        </div>
         <a href="https://convert.ctypy.com/aff_c?offer_id=29563&aff_id=21885" class="cta-button">
             Get Started with Visible Today
         </a>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any more questions, feel free to reach out!</p>
-        <form action="#" method="POST">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <p>"Switching to Visible was the best decision I made! The savings are incredible!"</p>
-            <p>- Sarah, Happy Customer</p>
-        </div>
-        <div class="testimonial">
-            <p>"I love how simple and straightforward Visible is. No hidden fees and amazing coverage."</p>
-            <p>- John, Happy Customer</p>
-        </div>
     </section>
 
     <!-- Footer Section -->
@@ -223,7 +350,6 @@
         <p><a href="#home">Home</a> | <a href="#contact">Contact</a> | <a href="#privacy-policy">Privacy Policy</a></p>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Link to your JS file -->
 </body>
 
 </html>
